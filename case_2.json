@@ -1,0 +1,1653 @@
+{
+  "task_info": {
+    "1": {
+      "distribution": "triangular",
+      "min_duration": 0.320833,
+      "mode_duration": 0.35,
+      "max_duration": 0.466667,
+      "mean_duration": 0.379167,
+      "std_duration": 0.031504,
+      "resource_reqs": {
+        "R1": 6,
+        "R2": 2,
+        "R3": 1
+      },
+      "predecessor": [],
+      "learning_factor": 0.4,
+      "task_name": "获取飞机总体需求与飞行包线",
+      "stage": "概念设计",
+      "subsystem": "飞机总体",
+      "representative_output": "飞机需求、飞行包线和任务环境基线"
+    },
+    "2": {
+      "distribution": "triangular",
+      "min_duration": 0.320833,
+      "mode_duration": 0.35,
+      "max_duration": 0.466667,
+      "mean_duration": 0.379167,
+      "std_duration": 0.031504,
+      "resource_reqs": {
+        "R1": 5,
+        "R2": 2,
+        "R3": 1
+      },
+      "predecessor": [],
+      "learning_factor": 0.4,
+      "task_name": "确定项目目标与运营要求",
+      "stage": "概念设计",
+      "subsystem": "运营要求",
+      "representative_output": "推力、耗油率、排放、噪声和成本目标"
+    },
+    "3": {
+      "distribution": "triangular",
+      "min_duration": 0.466667,
+      "mode_duration": 0.525,
+      "max_duration": 0.670833,
+      "mean_duration": 0.554167,
+      "std_duration": 0.042932,
+      "resource_reqs": {
+        "R1": 3,
+        "R2": 5,
+        "R3": 6
+      },
+      "predecessor": [],
+      "learning_factor": 0.4,
+      "task_name": "分析历史发动机基准方案",
+      "stage": "概念设计",
+      "subsystem": "历史发动机",
+      "representative_output": "历史发动机参数与性能基准"
+    },
+    "4": {
+      "distribution": "triangular",
+      "min_duration": 0.466667,
+      "mode_duration": 0.525,
+      "max_duration": 0.670833,
+      "mean_duration": 0.554167,
+      "std_duration": 0.042932,
+      "resource_reqs": {
+        "R1": 3,
+        "R2": 5,
+        "R3": 5
+      },
+      "predecessor": [],
+      "learning_factor": 0.6,
+      "task_name": "提出新技术与新设计概念",
+      "stage": "概念设计",
+      "subsystem": "新技术概念",
+      "representative_output": "候选技术清单和概念方案集合"
+    },
+    "5": {
+      "distribution": "triangular",
+      "min_duration": 0.466667,
+      "mode_duration": 0.525,
+      "max_duration": 0.7875,
+      "mean_duration": 0.593056,
+      "std_duration": 0.06977,
+      "resource_reqs": {
+        "R1": 6,
+        "R2": 2,
+        "R3": 1
+      },
+      "predecessor": [
+        "2",
+        "3"
+      ],
+      "learning_factor": 0.4,
+      "task_name": "设定技术假设并评估项目风险",
+      "stage": "概念设计",
+      "subsystem": "技术风险",
+      "representative_output": "技术假设、成熟度和初始风险清单"
+    },
+    "6": {
+      "distribution": "triangular",
+      "min_duration": 0.758333,
+      "mode_duration": 0.845833,
+      "max_duration": 1.283333,
+      "mean_duration": 0.9625,
+      "std_duration": 0.114829,
+      "resource_reqs": {
+        "R1": 3,
+        "R2": 5,
+        "R3": 6
+      },
+      "predecessor": [
+        "1",
+        "2"
+      ],
+      "learning_factor": 0.4,
+      "task_name": "开展热力循环方案迭代",
+      "stage": "概念设计",
+      "subsystem": "热力循环",
+      "representative_output": "热力循环参数组合和循环性能估计"
+    },
+    "7": {
+      "distribution": "triangular",
+      "min_duration": 0.6125,
+      "mode_duration": 0.670833,
+      "max_duration": 0.875,
+      "mean_duration": 0.719444,
+      "std_duration": 0.056271,
+      "resource_reqs": {
+        "R1": 4,
+        "R2": 5,
+        "R3": 5
+      },
+      "predecessor": [],
+      "learning_factor": 0.4,
+      "task_name": "细化备选总体方案",
+      "stage": "概念设计",
+      "subsystem": "总体方案",
+      "representative_output": "备选总体方案及其系统级参数包"
+    },
+    "8": {
+      "distribution": "triangular",
+      "min_duration": 0.466667,
+      "mode_duration": 0.525,
+      "max_duration": 0.670833,
+      "mean_duration": 0.554167,
+      "std_duration": 0.042932,
+      "resource_reqs": {
+        "R1": 3,
+        "R2": 5,
+        "R3": 6
+      },
+      "predecessor": [],
+      "learning_factor": 0.8,
+      "task_name": "验证综合参数并选择概念方案",
+      "stage": "概念设计",
+      "subsystem": "概念方案",
+      "representative_output": "概念方案、系统级参数基线和开发约束"
+    },
+    "9": {
+      "distribution": "triangular",
+      "min_duration": 0.320833,
+      "mode_duration": 0.35,
+      "max_duration": 0.466667,
+      "mean_duration": 0.379167,
+      "std_duration": 0.031504,
+      "resource_reqs": {
+        "R1": 5,
+        "R2": 3,
+        "R3": 1
+      },
+      "predecessor": [
+        "7",
+        "8"
+      ],
+      "learning_factor": 0.6,
+      "task_name": "接收并整理概念设计结果",
+      "stage": "初步设计",
+      "subsystem": "概念设计输入",
+      "representative_output": "概念设计输入包和上游参数基线"
+    },
+    "10": {
+      "distribution": "triangular",
+      "min_duration": 0.466667,
+      "mode_duration": 0.525,
+      "max_duration": 0.670833,
+      "mean_duration": 0.554167,
+      "std_duration": 0.042932,
+      "resource_reqs": {
+        "R1": 6,
+        "R2": 2,
+        "R3": 1
+      },
+      "predecessor": [
+        "6",
+        "7",
+        "8"
+      ],
+      "learning_factor": 0.4,
+      "task_name": "分解上层系统需求",
+      "stage": "初步设计",
+      "subsystem": "上层系统需求",
+      "representative_output": "子系统需求分解矩阵"
+    },
+    "11": {
+      "distribution": "triangular",
+      "min_duration": 0.758333,
+      "mode_duration": 0.845833,
+      "max_duration": 1.108333,
+      "mean_duration": 0.904166,
+      "std_duration": 0.074361,
+      "resource_reqs": {
+        "R1": 3,
+        "R2": 4,
+        "R3": 6
+      },
+      "predecessor": [
+        "10"
+      ],
+      "learning_factor": 0.4,
+      "task_name": "建立高保真系统级仿真模型",
+      "stage": "初步设计",
+      "subsystem": "系统级仿真",
+      "representative_output": "系统级仿真模型和参数传递关系"
+    },
+    "12": {
+      "distribution": "triangular",
+      "min_duration": 0.466667,
+      "mode_duration": 0.525,
+      "max_duration": 0.670833,
+      "mean_duration": 0.554167,
+      "std_duration": 0.042932,
+      "resource_reqs": {
+        "R1": 6,
+        "R2": 2,
+        "R3": 1
+      },
+      "predecessor": [
+        "10"
+      ],
+      "learning_factor": 0.4,
+      "task_name": "识别主要技术风险",
+      "stage": "初步设计",
+      "subsystem": "技术风险",
+      "representative_output": "技术风险清单和关键不确定性来源"
+    },
+    "13": {
+      "distribution": "triangular",
+      "min_duration": 0.466667,
+      "mode_duration": 0.525,
+      "max_duration": 0.670833,
+      "mean_duration": 0.554167,
+      "std_duration": 0.042932,
+      "resource_reqs": {
+        "R1": 3,
+        "R2": 4,
+        "R3": 5
+      },
+      "predecessor": [
+        "11"
+      ],
+      "learning_factor": 0.8,
+      "task_name": "验证新技术假设",
+      "stage": "初步设计",
+      "subsystem": "新技术验证",
+      "representative_output": "新技术假设验证结论"
+    },
+    "14": {
+      "distribution": "triangular",
+      "min_duration": 0.466667,
+      "mode_duration": 0.525,
+      "max_duration": 0.670833,
+      "mean_duration": 0.554167,
+      "std_duration": 0.042932,
+      "resource_reqs": {
+        "R1": 3,
+        "R2": 5,
+        "R3": 5
+      },
+      "predecessor": [
+        "7"
+      ],
+      "learning_factor": 0.8,
+      "task_name": "验证新设计概念",
+      "stage": "初步设计",
+      "subsystem": "新设计概念验证",
+      "representative_output": "新设计概念可行性结论"
+    },
+    "15": {
+      "distribution": "triangular",
+      "min_duration": 0.6125,
+      "mode_duration": 0.670833,
+      "max_duration": 0.875,
+      "mean_duration": 0.719444,
+      "std_duration": 0.056271,
+      "resource_reqs": {
+        "R1": 6,
+        "R2": 2,
+        "R3": 1
+      },
+      "predecessor": [
+        "10"
+      ],
+      "learning_factor": 0.4,
+      "task_name": "形成系统级需求文档",
+      "stage": "初步设计",
+      "subsystem": "系统级需求",
+      "representative_output": "系统级需求文档和参数约束集合"
+    },
+    "16": {
+      "distribution": "triangular",
+      "min_duration": 0.466667,
+      "mode_duration": 0.525,
+      "max_duration": 0.670833,
+      "mean_duration": 0.554167,
+      "std_duration": 0.042932,
+      "resource_reqs": {
+        "R1": 6,
+        "R2": 3,
+        "R3": 1
+      },
+      "predecessor": [
+        "11",
+        "15"
+      ],
+      "learning_factor": 0.6,
+      "task_name": "开展初步设计评审并制定后续计划",
+      "stage": "初步设计",
+      "subsystem": "初步设计评审",
+      "representative_output": "初步设计基线和详细设计计划"
+    },
+    "17": {
+      "distribution": "triangular",
+      "min_duration": 0.204167,
+      "mode_duration": 0.233333,
+      "max_duration": 0.291667,
+      "mean_duration": 0.243056,
+      "std_duration": 0.018189,
+      "resource_reqs": {
+        "R1": 4,
+        "R2": 4,
+        "R3": 2
+      },
+      "predecessor": [
+        "11",
+        "15"
+      ],
+      "learning_factor": 0.4,
+      "task_name": "风扇需求分解与风险识别",
+      "stage": "详细设计",
+      "subsystem": "风扇",
+      "representative_output": "风扇需求、接口约束和风险项"
+    },
+    "18": {
+      "distribution": "triangular",
+      "min_duration": 0.408333,
+      "mode_duration": 0.466667,
+      "max_duration": 0.6125,
+      "mean_duration": 0.495833,
+      "std_duration": 0.042932,
+      "resource_reqs": {
+        "R1": 1,
+        "R2": 6,
+        "R3": 4,
+        "R4": 1
+      },
+      "predecessor": [
+        "17"
+      ],
+      "learning_factor": 0.6,
+      "task_name": "风扇详细设计",
+      "stage": "详细设计",
+      "subsystem": "风扇",
+      "representative_output": "风扇详细设计参数包"
+    },
+    "19": {
+      "distribution": "triangular",
+      "min_duration": 0.35,
+      "mode_duration": 0.379167,
+      "max_duration": 0.495833,
+      "mean_duration": 0.408333,
+      "std_duration": 0.031503,
+      "resource_reqs": {
+        "R1": 1,
+        "R2": 3,
+        "R3": 2,
+        "R4": 6
+      },
+      "predecessor": [
+        "18"
+      ],
+      "learning_factor": 0.8,
+      "task_name": "风扇原型验证",
+      "stage": "详细设计",
+      "subsystem": "风扇",
+      "representative_output": "风扇原型验证报告"
+    },
+    "20": {
+      "distribution": "triangular",
+      "min_duration": 0.204167,
+      "mode_duration": 0.233333,
+      "max_duration": 0.291667,
+      "mean_duration": 0.243056,
+      "std_duration": 0.018189,
+      "resource_reqs": {
+        "R1": 4,
+        "R2": 4,
+        "R3": 2
+      },
+      "predecessor": [
+        "18"
+      ],
+      "learning_factor": 0.4,
+      "task_name": "低压压气机需求分解与风险识别",
+      "stage": "详细设计",
+      "subsystem": "低压压气机",
+      "representative_output": "低压压气机需求、接口约束和风险项"
+    },
+    "21": {
+      "distribution": "triangular",
+      "min_duration": 0.408333,
+      "mode_duration": 0.466667,
+      "max_duration": 0.6125,
+      "mean_duration": 0.495833,
+      "std_duration": 0.042932,
+      "resource_reqs": {
+        "R1": 1,
+        "R2": 6,
+        "R3": 4,
+        "R4": 1
+      },
+      "predecessor": [
+        "20"
+      ],
+      "learning_factor": 0.6,
+      "task_name": "低压压气机详细设计",
+      "stage": "详细设计",
+      "subsystem": "低压压气机",
+      "representative_output": "低压压气机详细设计参数包"
+    },
+    "22": {
+      "distribution": "triangular",
+      "min_duration": 0.35,
+      "mode_duration": 0.379167,
+      "max_duration": 0.495833,
+      "mean_duration": 0.408333,
+      "std_duration": 0.031503,
+      "resource_reqs": {
+        "R1": 1,
+        "R2": 3,
+        "R3": 2,
+        "R4": 6
+      },
+      "predecessor": [
+        "21"
+      ],
+      "learning_factor": 0.8,
+      "task_name": "低压压气机原型验证",
+      "stage": "详细设计",
+      "subsystem": "低压压气机",
+      "representative_output": "低压压气机原型验证报告"
+    },
+    "23": {
+      "distribution": "triangular",
+      "min_duration": 0.204167,
+      "mode_duration": 0.233333,
+      "max_duration": 0.291667,
+      "mean_duration": 0.243056,
+      "std_duration": 0.018189,
+      "resource_reqs": {
+        "R1": 4,
+        "R2": 4,
+        "R3": 2
+      },
+      "predecessor": [
+        "21"
+      ],
+      "learning_factor": 0.4,
+      "task_name": "高压压气机需求分解与风险识别",
+      "stage": "详细设计",
+      "subsystem": "高压压气机",
+      "representative_output": "高压压气机需求、接口约束和风险项"
+    },
+    "24": {
+      "distribution": "triangular",
+      "min_duration": 0.495833,
+      "mode_duration": 0.554167,
+      "max_duration": 0.816667,
+      "mean_duration": 0.622222,
+      "std_duration": 0.06977,
+      "resource_reqs": {
+        "R1": 1,
+        "R2": 6,
+        "R3": 4,
+        "R4": 1
+      },
+      "predecessor": [
+        "21"
+      ],
+      "learning_factor": 0.6,
+      "task_name": "高压压气机详细设计",
+      "stage": "详细设计",
+      "subsystem": "高压压气机",
+      "representative_output": "高压压气机详细设计参数包"
+    },
+    "25": {
+      "distribution": "triangular",
+      "min_duration": 0.35,
+      "mode_duration": 0.379167,
+      "max_duration": 0.495833,
+      "mean_duration": 0.408333,
+      "std_duration": 0.031503,
+      "resource_reqs": {
+        "R1": 1,
+        "R2": 3,
+        "R3": 2,
+        "R4": 6
+      },
+      "predecessor": [
+        "24"
+      ],
+      "learning_factor": 0.8,
+      "task_name": "高压压气机原型验证",
+      "stage": "详细设计",
+      "subsystem": "高压压气机",
+      "representative_output": "高压压气机原型验证报告"
+    },
+    "26": {
+      "distribution": "triangular",
+      "min_duration": 0.204167,
+      "mode_duration": 0.233333,
+      "max_duration": 0.291667,
+      "mean_duration": 0.243056,
+      "std_duration": 0.018189,
+      "resource_reqs": {
+        "R1": 4,
+        "R2": 4,
+        "R3": 2
+      },
+      "predecessor": [
+        "24"
+      ],
+      "learning_factor": 0.4,
+      "task_name": "扩压器/燃烧室需求分解与风险识别",
+      "stage": "详细设计",
+      "subsystem": "燃烧室",
+      "representative_output": "扩压器/燃烧室需求、接口约束和风险项"
+    },
+    "27": {
+      "distribution": "triangular",
+      "min_duration": 0.495833,
+      "mode_duration": 0.554167,
+      "max_duration": 0.816667,
+      "mean_duration": 0.622222,
+      "std_duration": 0.06977,
+      "resource_reqs": {
+        "R1": 1,
+        "R2": 6,
+        "R3": 4,
+        "R4": 1
+      },
+      "predecessor": [
+        "24"
+      ],
+      "learning_factor": 0.6,
+      "task_name": "扩压器/燃烧室详细设计",
+      "stage": "详细设计",
+      "subsystem": "燃烧室",
+      "representative_output": "扩压器/燃烧室详细设计参数包"
+    },
+    "28": {
+      "distribution": "triangular",
+      "min_duration": 0.35,
+      "mode_duration": 0.379167,
+      "max_duration": 0.495833,
+      "mean_duration": 0.408333,
+      "std_duration": 0.031503,
+      "resource_reqs": {
+        "R1": 1,
+        "R2": 3,
+        "R3": 2,
+        "R4": 6
+      },
+      "predecessor": [
+        "27"
+      ],
+      "learning_factor": 0.8,
+      "task_name": "扩压器/燃烧室原型验证",
+      "stage": "详细设计",
+      "subsystem": "燃烧室",
+      "representative_output": "扩压器/燃烧室原型验证报告"
+    },
+    "29": {
+      "distribution": "triangular",
+      "min_duration": 0.204167,
+      "mode_duration": 0.233333,
+      "max_duration": 0.291667,
+      "mean_duration": 0.243056,
+      "std_duration": 0.018189,
+      "resource_reqs": {
+        "R1": 4,
+        "R2": 4,
+        "R3": 2
+      },
+      "predecessor": [
+        "27"
+      ],
+      "learning_factor": 0.4,
+      "task_name": "高压涡轮需求分解与风险识别",
+      "stage": "详细设计",
+      "subsystem": "高压涡轮",
+      "representative_output": "高压涡轮需求、接口约束和风险项"
+    },
+    "30": {
+      "distribution": "triangular",
+      "min_duration": 0.495833,
+      "mode_duration": 0.554167,
+      "max_duration": 0.816667,
+      "mean_duration": 0.622222,
+      "std_duration": 0.06977,
+      "resource_reqs": {
+        "R1": 1,
+        "R2": 6,
+        "R3": 4,
+        "R4": 1
+      },
+      "predecessor": [
+        "27"
+      ],
+      "learning_factor": 0.6,
+      "task_name": "高压涡轮详细设计",
+      "stage": "详细设计",
+      "subsystem": "高压涡轮",
+      "representative_output": "高压涡轮详细设计参数包"
+    },
+    "31": {
+      "distribution": "triangular",
+      "min_duration": 0.35,
+      "mode_duration": 0.379167,
+      "max_duration": 0.495833,
+      "mean_duration": 0.408333,
+      "std_duration": 0.031503,
+      "resource_reqs": {
+        "R1": 1,
+        "R2": 3,
+        "R3": 2,
+        "R4": 6
+      },
+      "predecessor": [
+        "30"
+      ],
+      "learning_factor": 0.8,
+      "task_name": "高压涡轮原型验证",
+      "stage": "详细设计",
+      "subsystem": "高压涡轮",
+      "representative_output": "高压涡轮原型验证报告"
+    },
+    "32": {
+      "distribution": "triangular",
+      "min_duration": 0.204167,
+      "mode_duration": 0.233333,
+      "max_duration": 0.291667,
+      "mean_duration": 0.243056,
+      "std_duration": 0.018189,
+      "resource_reqs": {
+        "R1": 4,
+        "R2": 4,
+        "R3": 2
+      },
+      "predecessor": [
+        "30"
+      ],
+      "learning_factor": 0.4,
+      "task_name": "低压涡轮需求分解与风险识别",
+      "stage": "详细设计",
+      "subsystem": "低压涡轮",
+      "representative_output": "低压涡轮需求、接口约束和风险项"
+    },
+    "33": {
+      "distribution": "triangular",
+      "min_duration": 0.408333,
+      "mode_duration": 0.466667,
+      "max_duration": 0.6125,
+      "mean_duration": 0.495833,
+      "std_duration": 0.042932,
+      "resource_reqs": {
+        "R1": 1,
+        "R2": 6,
+        "R3": 4,
+        "R4": 1
+      },
+      "predecessor": [
+        "30"
+      ],
+      "learning_factor": 0.6,
+      "task_name": "低压涡轮详细设计",
+      "stage": "详细设计",
+      "subsystem": "低压涡轮",
+      "representative_output": "低压涡轮详细设计参数包"
+    },
+    "34": {
+      "distribution": "triangular",
+      "min_duration": 0.35,
+      "mode_duration": 0.379167,
+      "max_duration": 0.495833,
+      "mean_duration": 0.408333,
+      "std_duration": 0.031503,
+      "resource_reqs": {
+        "R1": 1,
+        "R2": 3,
+        "R3": 2,
+        "R4": 6
+      },
+      "predecessor": [
+        "33"
+      ],
+      "learning_factor": 0.8,
+      "task_name": "低压涡轮原型验证",
+      "stage": "详细设计",
+      "subsystem": "低压涡轮",
+      "representative_output": "低压涡轮原型验证报告"
+    },
+    "35": {
+      "distribution": "triangular",
+      "min_duration": 0.204167,
+      "mode_duration": 0.233333,
+      "max_duration": 0.291667,
+      "mean_duration": 0.243056,
+      "std_duration": 0.018189,
+      "resource_reqs": {
+        "R1": 4,
+        "R2": 4,
+        "R3": 2
+      },
+      "predecessor": [
+        "5",
+        "12",
+        "33"
+      ],
+      "learning_factor": 0.4,
+      "task_name": "机械部件需求分解与风险识别",
+      "stage": "详细设计",
+      "subsystem": "机械部件",
+      "representative_output": "机械部件需求、接口约束和风险项"
+    },
+    "36": {
+      "distribution": "triangular",
+      "min_duration": 0.35,
+      "mode_duration": 0.379167,
+      "max_duration": 0.495833,
+      "mean_duration": 0.408333,
+      "std_duration": 0.031503,
+      "resource_reqs": {
+        "R1": 1,
+        "R2": 6,
+        "R3": 4,
+        "R4": 1
+      },
+      "predecessor": [
+        "18"
+      ],
+      "learning_factor": 0.6,
+      "task_name": "机械部件详细设计",
+      "stage": "详细设计",
+      "subsystem": "机械部件",
+      "representative_output": "机械部件详细设计参数包"
+    },
+    "37": {
+      "distribution": "triangular",
+      "min_duration": 0.35,
+      "mode_duration": 0.379167,
+      "max_duration": 0.495833,
+      "mean_duration": 0.408333,
+      "std_duration": 0.031503,
+      "resource_reqs": {
+        "R1": 1,
+        "R2": 3,
+        "R3": 2,
+        "R4": 6
+      },
+      "predecessor": [
+        "36"
+      ],
+      "learning_factor": 0.8,
+      "task_name": "机械部件原型验证",
+      "stage": "详细设计",
+      "subsystem": "机械部件",
+      "representative_output": "机械部件原型验证报告"
+    },
+    "38": {
+      "distribution": "triangular",
+      "min_duration": 0.204167,
+      "mode_duration": 0.233333,
+      "max_duration": 0.291667,
+      "mean_duration": 0.243056,
+      "std_duration": 0.018189,
+      "resource_reqs": {
+        "R1": 4,
+        "R2": 4,
+        "R3": 2
+      },
+      "predecessor": [
+        "33",
+        "36"
+      ],
+      "learning_factor": 0.4,
+      "task_name": "外部系统/控制需求分解与风险识别",
+      "stage": "详细设计",
+      "subsystem": "外部系统/控制",
+      "representative_output": "外部系统/控制需求、接口约束和风险项"
+    },
+    "39": {
+      "distribution": "triangular",
+      "min_duration": 0.35,
+      "mode_duration": 0.379167,
+      "max_duration": 0.495833,
+      "mean_duration": 0.408333,
+      "std_duration": 0.031503,
+      "resource_reqs": {
+        "R1": 1,
+        "R2": 6,
+        "R3": 4,
+        "R4": 1
+      },
+      "predecessor": [
+        "11"
+      ],
+      "learning_factor": 0.6,
+      "task_name": "外部系统/控制详细设计",
+      "stage": "详细设计",
+      "subsystem": "外部系统/控制",
+      "representative_output": "外部系统/控制详细设计参数包"
+    },
+    "40": {
+      "distribution": "triangular",
+      "min_duration": 0.35,
+      "mode_duration": 0.379167,
+      "max_duration": 0.495833,
+      "mean_duration": 0.408333,
+      "std_duration": 0.031503,
+      "resource_reqs": {
+        "R1": 1,
+        "R2": 3,
+        "R3": 2,
+        "R4": 6
+      },
+      "predecessor": [
+        "39"
+      ],
+      "learning_factor": 0.8,
+      "task_name": "外部系统/控制原型验证",
+      "stage": "详细设计",
+      "subsystem": "外部系统/控制",
+      "representative_output": "外部系统/控制原型验证报告"
+    },
+    "41": {
+      "distribution": "triangular",
+      "min_duration": 0.204167,
+      "mode_duration": 0.233333,
+      "max_duration": 0.291667,
+      "mean_duration": 0.243056,
+      "std_duration": 0.018189,
+      "resource_reqs": {
+        "R1": 4,
+        "R2": 4,
+        "R3": 2
+      },
+      "predecessor": [
+        "21",
+        "39"
+      ],
+      "learning_factor": 0.4,
+      "task_name": "短舱需求分解与风险识别",
+      "stage": "详细设计",
+      "subsystem": "短舱",
+      "representative_output": "短舱需求、接口约束和风险项"
+    },
+    "42": {
+      "distribution": "triangular",
+      "min_duration": 0.35,
+      "mode_duration": 0.379167,
+      "max_duration": 0.495833,
+      "mean_duration": 0.408333,
+      "std_duration": 0.031503,
+      "resource_reqs": {
+        "R1": 1,
+        "R2": 6,
+        "R3": 4,
+        "R4": 1
+      },
+      "predecessor": [
+        "18"
+      ],
+      "learning_factor": 0.6,
+      "task_name": "短舱详细设计",
+      "stage": "详细设计",
+      "subsystem": "短舱",
+      "representative_output": "短舱详细设计参数包"
+    },
+    "43": {
+      "distribution": "triangular",
+      "min_duration": 0.35,
+      "mode_duration": 0.379167,
+      "max_duration": 0.495833,
+      "mean_duration": 0.408333,
+      "std_duration": 0.031503,
+      "resource_reqs": {
+        "R1": 1,
+        "R2": 3,
+        "R3": 2,
+        "R4": 6
+      },
+      "predecessor": [
+        "42"
+      ],
+      "learning_factor": 0.8,
+      "task_name": "短舱原型验证",
+      "stage": "详细设计",
+      "subsystem": "短舱",
+      "representative_output": "短舱原型验证报告"
+    },
+    "44": {
+      "distribution": "triangular",
+      "min_duration": 0.291667,
+      "mode_duration": 0.320833,
+      "max_duration": 0.408333,
+      "mean_duration": 0.340278,
+      "std_duration": 0.024787,
+      "resource_reqs": {
+        "R1": 3,
+        "R2": 2,
+        "R3": 4,
+        "R4": 6
+      },
+      "predecessor": [
+        "19",
+        "22",
+        "25",
+        "28",
+        "31",
+        "33",
+        "34",
+        "36",
+        "37",
+        "39",
+        "40",
+        "42",
+        "43"
+      ],
+      "learning_factor": 0.8,
+      "task_name": "系统集成前参数验证与硬件汇总",
+      "stage": "系统验证",
+      "subsystem": "总体",
+      "representative_output": "关键指标预测结论和部件/模块硬件齐套性记录"
+    },
+    "45": {
+      "distribution": "triangular",
+      "min_duration": 0.291667,
+      "mode_duration": 0.320833,
+      "max_duration": 0.408333,
+      "mean_duration": 0.340278,
+      "std_duration": 0.024787,
+      "resource_reqs": {
+        "R1": 3,
+        "R2": 2,
+        "R3": 3,
+        "R4": 6
+      },
+      "predecessor": [
+        "44"
+      ],
+      "learning_factor": 0.8,
+      "task_name": "完成系统原型装配",
+      "stage": "系统验证",
+      "subsystem": "系统原型装配",
+      "representative_output": "系统原型装配状态和接口检查结果"
+    },
+    "46": {
+      "distribution": "triangular",
+      "min_duration": 0.291667,
+      "mode_duration": 0.320833,
+      "max_duration": 0.408333,
+      "mean_duration": 0.340278,
+      "std_duration": 0.024787,
+      "resource_reqs": {
+        "R1": 3,
+        "R2": 2,
+        "R3": 4,
+        "R4": 6
+      },
+      "predecessor": [
+        "44"
+      ],
+      "learning_factor": 0.8,
+      "task_name": "开展首台发动机直接参数测量",
+      "stage": "系统验证",
+      "subsystem": "首台发动机测量",
+      "representative_output": "首台发动机直接测量参数"
+    },
+    "47": {
+      "distribution": "triangular",
+      "min_duration": 2.5375,
+      "mode_duration": 2.829167,
+      "max_duration": 4.258333,
+      "mean_duration": 3.208333,
+      "std_duration": 0.375975,
+      "resource_reqs": {
+        "R1": 3,
+        "R2": 2,
+        "R3": 3,
+        "R4": 6
+      },
+      "predecessor": [
+        "46"
+      ],
+      "learning_factor": 0.8,
+      "task_name": "开展专项性能试验",
+      "stage": "系统验证",
+      "subsystem": "专项性能试验",
+      "representative_output": "性能、排放、噪声和热管理试验结果"
+    },
+    "48": {
+      "distribution": "triangular",
+      "min_duration": 2.1,
+      "mode_duration": 2.333333,
+      "max_duration": 3.5,
+      "mean_duration": 2.644444,
+      "std_duration": 0.306211,
+      "resource_reqs": {
+        "R1": 3,
+        "R2": 2,
+        "R3": 3,
+        "R4": 5
+      },
+      "predecessor": [
+        "46"
+      ],
+      "learning_factor": 0.8,
+      "task_name": "开展可操作性与喘振裕度验证",
+      "stage": "系统验证",
+      "subsystem": "可操作性与喘振裕度",
+      "representative_output": "可操作性、稳定性和喘振裕度验证结果"
+    },
+    "49": {
+      "distribution": "triangular",
+      "min_duration": 0.641667,
+      "mode_duration": 0.7,
+      "max_duration": 0.904167,
+      "mean_duration": 0.748611,
+      "std_duration": 0.056271,
+      "resource_reqs": {
+        "R1": 3,
+        "R2": 2,
+        "R3": 4,
+        "R4": 5
+      },
+      "predecessor": [
+        "47",
+        "48"
+      ],
+      "learning_factor": 0.4,
+      "task_name": "计算并确认综合参数",
+      "stage": "系统验证",
+      "subsystem": "综合参数",
+      "representative_output": "发动机重量、推力和耗油率等综合参数"
+    },
+    "50": {
+      "distribution": "triangular",
+      "min_duration": 0.641667,
+      "mode_duration": 0.7,
+      "max_duration": 0.904167,
+      "mean_duration": 0.748611,
+      "std_duration": 0.056271,
+      "resource_reqs": {
+        "R1": 4,
+        "R2": 2,
+        "R3": 3,
+        "R4": 5
+      },
+      "predecessor": [
+        "49"
+      ],
+      "learning_factor": 0.4,
+      "task_name": "评估需求符合性并制定恢复计划",
+      "stage": "系统验证",
+      "subsystem": "需求符合性",
+      "representative_output": "需求符合性评估结果和返工恢复计划"
+    }
+  },
+  "prob_dict": {
+    "1": {
+      "6": 0
+    },
+    "2": {
+      "5": 0,
+      "6": 0
+    },
+    "3": {
+      "5": 0
+    },
+    "4": {},
+    "5": {
+      "35": 0
+    },
+    "6": {
+      "10": 0,
+      "17": 0,
+      "18": 0,
+      "23": 0,
+      "38": 0,
+      "41": 0
+    },
+    "7": {
+      "9": 0,
+      "10": 0,
+      "14": 0,
+      "17": 0,
+      "20": 0,
+      "23": 0,
+      "26": 0,
+      "29": 0,
+      "32": 0,
+      "35": 0,
+      "38": 0,
+      "41": 0
+    },
+    "8": {
+      "9": 0,
+      "10": 0,
+      "12": 0
+    },
+    "9": {},
+    "10": {
+      "11": 0,
+      "12": 0,
+      "15": 0,
+      "17": 0,
+      "20": 0,
+      "23": 0,
+      "26": 0,
+      "29": 0,
+      "32": 0,
+      "35": 0,
+      "36": 0,
+      "37": 0,
+      "38": 0,
+      "41": 0,
+      "47": 0,
+      "48": 0,
+      "49": 0,
+      "50": 0
+    },
+    "11": {
+      "13": 0,
+      "16": 0,
+      "17": 0,
+      "20": 0,
+      "23": 0,
+      "26": 0,
+      "27": 0,
+      "28": 0,
+      "29": 0,
+      "32": 0,
+      "35": 0,
+      "36": 0,
+      "38": 0,
+      "39": 0,
+      "41": 0,
+      "47": 0
+    },
+    "12": {
+      "35": 0
+    },
+    "13": {},
+    "14": {},
+    "15": {
+      "16": 0,
+      "17": 0,
+      "20": 0,
+      "23": 0,
+      "26": 0,
+      "35": 0,
+      "38": 0,
+      "41": 0,
+      "47": 0
+    },
+    "16": {
+      "15": 0
+    },
+    "17": {
+      "18": 0,
+      "19": 0,
+      "41": 0,
+      "42": 0,
+      "43": 0,
+      "47": 0,
+      "50": 0
+    },
+    "18": {
+      "19": 0,
+      "20": 0,
+      "21": 0,
+      "35": 0,
+      "36": 0,
+      "37": 0,
+      "41": 0,
+      "42": 0,
+      "43": 0,
+      "44": 0,
+      "47": 0,
+      "48": 0,
+      "49": 0
+    },
+    "19": {
+      "17": 0,
+      "18": 0
+    },
+    "20": {
+      "21": 0
+    },
+    "21": {
+      "22": 0,
+      "23": 0,
+      "24": 0,
+      "25": 0,
+      "32": 0,
+      "38": 0,
+      "41": 0,
+      "44": 0,
+      "45": 0,
+      "47": 0,
+      "48": 0,
+      "49": 0
+    },
+    "22": {
+      "20": 0,
+      "21": 0
+    },
+    "23": {},
+    "24": {
+      "25": 0,
+      "26": 0,
+      "27": 0,
+      "28": 0,
+      "29": 0,
+      "38": 0,
+      "44": 0,
+      "45": 0,
+      "47": 0,
+      "48": 0,
+      "49": 0
+    },
+    "25": {
+      "23": 0,
+      "24": 0
+    },
+    "26": {},
+    "27": {
+      "28": 0,
+      "29": 0,
+      "30": 0,
+      "31": 0,
+      "38": 0,
+      "44": 0,
+      "47": 0,
+      "48": 0,
+      "49": 0
+    },
+    "28": {
+      "26": 0,
+      "27": 0
+    },
+    "29": {},
+    "30": {
+      "31": 0,
+      "32": 0,
+      "33": 0,
+      "34": 0,
+      "35": 0,
+      "44": 0,
+      "47": 0,
+      "49": 0
+    },
+    "31": {
+      "29": 0,
+      "30": 0
+    },
+    "32": {},
+    "33": {
+      "34": 0,
+      "35": 0,
+      "38": 0,
+      "44": 0,
+      "45": 0,
+      "47": 0,
+      "49": 0
+    },
+    "34": {
+      "32": 0,
+      "33": 0
+    },
+    "35": {},
+    "36": {
+      "37": 0,
+      "38": 0,
+      "44": 0,
+      "45": 0,
+      "46": 0,
+      "47": 0,
+      "48": 0,
+      "50": 0
+    },
+    "37": {
+      "35": 0,
+      "36": 0
+    },
+    "38": {},
+    "39": {
+      "40": 0,
+      "41": 0,
+      "44": 0,
+      "45": 0,
+      "46": 0,
+      "47": 0,
+      "48": 0,
+      "50": 0
+    },
+    "40": {
+      "38": 0,
+      "39": 0
+    },
+    "41": {},
+    "42": {
+      "43": 0,
+      "44": 0,
+      "45": 0,
+      "47": 0,
+      "48": 0,
+      "49": 0
+    },
+    "43": {
+      "41": 0,
+      "42": 0
+    },
+    "44": {
+      "11": 0,
+      "15": 0,
+      "45": 0,
+      "46": 0
+    },
+    "45": {},
+    "46": {
+      "47": 0,
+      "48": 0,
+      "49": 0
+    },
+    "47": {
+      "49": 0
+    },
+    "48": {
+      "49": 0
+    },
+    "49": {
+      "50": 0
+    },
+    "50": {}
+  },
+  "impact_dict": {
+    "1": {
+      "6": 0.5
+    },
+    "2": {
+      "5": 0.5,
+      "6": 0.5
+    },
+    "3": {
+      "5": 0.5
+    },
+    "4": {},
+    "5": {
+      "35": 0.5
+    },
+    "6": {
+      "10": 0.5,
+      "17": 0.3,
+      "18": 0.3,
+      "23": 0.3,
+      "38": 0.3,
+      "41": 0.3
+    },
+    "7": {
+      "9": 0.5,
+      "10": 0.5,
+      "14": 0.5,
+      "17": 0.3,
+      "20": 0.3,
+      "23": 0.3,
+      "26": 0.3,
+      "29": 0.3,
+      "32": 0.3,
+      "35": 0.3,
+      "38": 0.3,
+      "41": 0.3
+    },
+    "8": {
+      "9": 0.5,
+      "10": 0.5,
+      "12": 0.3
+    },
+    "9": {},
+    "10": {
+      "11": 0.5,
+      "12": 0.5,
+      "15": 0.5,
+      "17": 0.3,
+      "20": 0.3,
+      "23": 0.3,
+      "26": 0.3,
+      "29": 0.3,
+      "32": 0.3,
+      "35": 0.3,
+      "36": 0.3,
+      "37": 0.3,
+      "38": 0.3,
+      "41": 0.3,
+      "47": 0.3,
+      "48": 0.3,
+      "49": 0.3,
+      "50": 0.3
+    },
+    "11": {
+      "13": 0.5,
+      "16": 0.5,
+      "17": 0.5,
+      "20": 0.3,
+      "23": 0.3,
+      "26": 0.3,
+      "27": 0.3,
+      "28": 0.3,
+      "29": 0.3,
+      "32": 0.3,
+      "35": 0.3,
+      "36": 0.3,
+      "38": 0.3,
+      "39": 0.5,
+      "41": 0.3,
+      "47": 0.3
+    },
+    "12": {
+      "35": 0.5
+    },
+    "13": {},
+    "14": {},
+    "15": {
+      "16": 0.5,
+      "17": 0.5,
+      "20": 0.3,
+      "23": 0.3,
+      "26": 0.3,
+      "35": 0.3,
+      "38": 0.3,
+      "41": 0.3,
+      "47": 0.3
+    },
+    "16": {
+      "15": 0.6
+    },
+    "17": {
+      "18": 0.5,
+      "19": 0.3,
+      "41": 0.3,
+      "42": 0.3,
+      "43": 0.3,
+      "47": 0.3,
+      "50": 0.3
+    },
+    "18": {
+      "19": 0.5,
+      "20": 0.5,
+      "21": 0.3,
+      "35": 0.3,
+      "36": 0.5,
+      "37": 0.3,
+      "41": 0.3,
+      "42": 0.5,
+      "43": 0.3,
+      "44": 0.3,
+      "47": 0.3,
+      "48": 0.3,
+      "49": 0.3
+    },
+    "19": {
+      "17": 0.6,
+      "18": 0.7
+    },
+    "20": {
+      "21": 0.5
+    },
+    "21": {
+      "22": 0.5,
+      "23": 0.5,
+      "24": 0.5,
+      "25": 0.3,
+      "32": 0.3,
+      "38": 0.3,
+      "41": 0.5,
+      "44": 0.3,
+      "45": 0.3,
+      "47": 0.3,
+      "48": 0.3,
+      "49": 0.3
+    },
+    "22": {
+      "20": 0.6,
+      "21": 0.7
+    },
+    "23": {},
+    "24": {
+      "25": 0.5,
+      "26": 0.5,
+      "27": 0.5,
+      "28": 0.3,
+      "29": 0.3,
+      "38": 0.3,
+      "44": 0.3,
+      "45": 0.3,
+      "47": 0.3,
+      "48": 0.3,
+      "49": 0.3
+    },
+    "25": {
+      "23": 0.6,
+      "24": 0.7
+    },
+    "26": {},
+    "27": {
+      "28": 0.5,
+      "29": 0.5,
+      "30": 0.5,
+      "31": 0.3,
+      "38": 0.3,
+      "44": 0.3,
+      "47": 0.3,
+      "48": 0.3,
+      "49": 0.3
+    },
+    "28": {
+      "26": 0.6,
+      "27": 0.7
+    },
+    "29": {},
+    "30": {
+      "31": 0.5,
+      "32": 0.5,
+      "33": 0.5,
+      "34": 0.3,
+      "35": 0.3,
+      "44": 0.3,
+      "47": 0.3,
+      "49": 0.3
+    },
+    "31": {
+      "29": 0.6,
+      "30": 0.7
+    },
+    "32": {},
+    "33": {
+      "34": 0.5,
+      "35": 0.5,
+      "38": 0.5,
+      "44": 0.5,
+      "45": 0.3,
+      "47": 0.3,
+      "49": 0.3
+    },
+    "34": {
+      "32": 0.6,
+      "33": 0.7
+    },
+    "35": {},
+    "36": {
+      "37": 0.5,
+      "38": 0.5,
+      "44": 0.5,
+      "45": 0.3,
+      "46": 0.3,
+      "47": 0.3,
+      "48": 0.3,
+      "50": 0.3
+    },
+    "37": {
+      "35": 0.6,
+      "36": 0.7
+    },
+    "38": {},
+    "39": {
+      "40": 0.5,
+      "41": 0.5,
+      "44": 0.5,
+      "45": 0.3,
+      "46": 0.3,
+      "47": 0.3,
+      "48": 0.3,
+      "50": 0.3
+    },
+    "40": {
+      "38": 0.6,
+      "39": 0.7
+    },
+    "41": {},
+    "42": {
+      "43": 0.5,
+      "44": 0.5,
+      "45": 0.3,
+      "47": 0.3,
+      "48": 0.3,
+      "49": 0.3
+    },
+    "43": {
+      "41": 0.6,
+      "42": 0.7
+    },
+    "44": {
+      "11": 0.8,
+      "15": 0.8,
+      "45": 0.5,
+      "46": 0.5
+    },
+    "45": {},
+    "46": {
+      "47": 0.5,
+      "48": 0.5,
+      "49": 0.3
+    },
+    "47": {
+      "49": 0.5
+    },
+    "48": {
+      "49": 0.5
+    },
+    "49": {
+      "50": 0.5
+    },
+    "50": {}
+  },
+  "resource_pool": {
+    "R1": 10,
+    "R2": 10,
+    "R3": 10,
+    "R4": 10
+  }
+}
